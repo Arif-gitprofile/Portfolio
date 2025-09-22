@@ -1,0 +1,401 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+header{
+    height:90px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+main{
+    height: 150vw;
+    background-color: darkviole;
+}
+body{
+    background: #000000;
+}  
+
+.log{
+    
+    height: 70px;
+    margin: 10px 20px;
+}
+.navbar{
+    
+    width: 50%;
+    margin-right: 20px;
+    align-self: center;
+    
+}
+.nav{
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+.navbar nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar nav a:hover{
+    color:chartreuse;
+}
+.page1{
+    display: flex;
+    height: 45vw;
+    background-color: aquamarie;
+    justify-content: space-between;
+    
+    
+
+}
+.newbox{
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+.photo{
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    height: 30vw;
+    animation: lightning 1s ease-in-out 0ms infinite alternate-reverse ;
+}
+@keyframes lightning {
+    0%{box-shadow: 0 0 50px pink}
+    100%{box-shadow: 0 0 50px yellow}
+}
+.info{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column ;
+    
+}
+.details{
+    margin-top: 50px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hi{
+    margin-left: 7px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.name{
+    font-family: sans-serif;
+    font-size: 8vw;
+    font-weight: 700;
+    color: chartreuse;
+}
+.bio{
+    width: 40vw;
+}
+.job{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    color: yellowgreen;
+}
+.about{
+    font-size:1.1vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.box_copy{
+    height: 12vw;
+    width: 12vw;
+    background-color: rgba(255, 255, 255,0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.i{
+    color: #ffffff;
+    height: 10vw;
+    margin-top: 10px;
+}
+
+.I{
+    margin-top: 2.5vw;
+   height: 6vw;
+   
+}
+
+.skills2{
+
+    align-self: center;
+    height: 38vw;
+    align-items: center;
+    
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pin;
+}
+
+.cv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cvbtn{
+    width: 58%;
+    height: 4vw;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2.5px solid chartreuse;
+    background-color: chartreuse;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-timing-function: ease-in-out;
+}
+.cvbtn:hover{
+    box-shadow: 0 0 10px chartreuse;
+    
+}
+.worksbtn{
+    width: 30%;
+    height: 4vw;
+    border-radius: 50px;
+    color: #ffffff;
+    border: 2.5px solid yellowgreen;
+    
+    margin-right: 30px;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-timing-function: ease-in-out;
+    background-color: yellowgreen;
+}
+.worksbtn:hover{
+    
+    box-shadow: 0 0 10px yellowgreen;
+    
+}
+.skills{
+    width: 45vw;
+    height: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: pin;
+}
+.contact{
+    margin-top: 2vw;
+    padding-top: 1vw;
+    height: 5vw;
+    width: 25vw;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    }
+.icon{
+    height: 2vw;
+}
+.ic{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    padding: 1vw;
+    
+    border: 3px solid chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact span{
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 800;
+    color: chartreuse;
+}
+.material-symbols-outlined{
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+.material-symbols-outlined:hover{
+    background-color: chartreuse;
+    color: #000000;
+    padding: 1.5vw;
+    box-shadow: 0 0 10px chartreuse;
+    
+}
+.page2{
+    height: 48vw;
+    background-color: blu;
+    display: flex;
+    flex-direction:column ;
+}
+.box p{
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 4px;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box h4{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5px;
+    font-size: 1.2vw;
+    color: rgba(255, 255, 255,0.8);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.skl{
+    padding-top: 30px;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    color: #ffffff;
+    text-align: center;
+}
+
+.box{
+    height: 24vw;
+    width: 24vw;
+    background-color: rgba(255, 255, 255,0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover{
+    height: 26vw;
+    width: 26vw;
+    box-shadow: 0 0px 40px rgba(16, 251, 0.4,1);
+    
+    
+}
+footer{
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: rgb(29, 29, 29);
+    height: 60px;
+    color:rgba(244, 242, 242, 0.7);
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.page3{
+    background-color: crimso;
+    height: 48vw;
+    display: flex;
+
+}
+.myimg{
+    width: 40%;
+    background-color: aqu;
+}
+.aboutsection{
+    width: 60%;
+    background-color: blueviole;
+    
+}
+.abouttitle{
+    height: 25%;
+    background-color: cadetblu;
+    
+    
+}
+.abouttitle h4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3vw;
+  font-weight: 600;
+  color: white;
+  padding-top: 7vw;
+  
+}
+.aboutme{
+    height: 49%;
+    background-color: darkgoldenro;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aboutme p{
+    font-size: 1.6vw;
+    padding-right: 6vw;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: justify;
+}
+.imgq{
+    margin: 6vw;
+    height: 34vw;
+    border-radius: 30px;
+    
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0ms;
+}
+.imgq:hover{
+    margin-bottom: 12vw;
+    height: 40vw;
+}
+.abouttitle h4:hover{
+    
+    color: greenyellow;
+}
+.more{
+    height: 5%;
+
+}
+.morebtn{
+    height: 3.5vw;
+    width: 20vw;
+    border-radius: 20px;
+    background-color: chartreuse;
+    box-shadow: 0 0 10px chartreuse;
+    border: 0;
+    
+}
+.morebtn:hover{
+    background-color: greenyellow;
+}
+.morebtn h4{
+    color: #000000;
+    font-weight: 900;
+
+    text-align: center;
+    font-family:     'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.im{
+    
+    margin: 6vw;
+    height: 34vw;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
