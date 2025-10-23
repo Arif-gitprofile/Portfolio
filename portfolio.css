@@ -2,93 +2,197 @@
     margin: 0%;
     padding: 0%;
     
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 header{
-    height:90px;
-    background-color: black;
+    height:10vh;
+
     display: flex;
     justify-content: space-between;
     
 }
-main{
-    height: 150vw;
-    background-color: darkviole;
-}
 body{
-    background: #000000;
+    background-color: black;
+    background:linear-gradient(to bottom,rgba(0, 11, 6, 0.947) 20%,rgba(0, 29, 17, 0.95) 31% ,rgba(0, 11, 6, 0.947) 40% ,#012717f1 100% )   ;
+    
+  background: linear-gradient(-45deg, rgba(0, 11, 6, 0.947), #002516f1 , #00120d, #002822);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
 }  
 
-.log{
+.logo{
+    display: flex;
+     margin-left: 50px;
+
+    align-items: center;
+    width: 40%;
+    height: 100%;
+} 
     
-    height: 70px;
-    margin: 10px 20px;
+
+.logo p{
+    font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 3vw;
+}
+.logo p span{
+    color: chartreuse;
+    font-weight: 900;
+    font-family: "BBH Sans Hegarthy";
+    font-size: 40px;
 }
 .navbar{
     
-    width: 50%;
-    margin-right: 20px;
-    align-self: center;
+    width: 60%;
+    
+    
+    display: flex;
+    align-items: center;
+    
+    
     
 }
 .nav{
+    width: 100%;
+
     display: flex;
     
     justify-content: space-evenly;
 }
+
 .navbar nav a{
+    
     text-decoration: none;
     color: white;
-    font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
 }
+
+
 .navbar nav a:hover{
     color:chartreuse;
 }
-.page1{
-    display: flex;
-    height: 45vw;
-    background-color: aquamarie;
-    justify-content: space-between;
+#page1{
+   height: 100vh;
+
+    
+    
+
     
     
 
 }
-.newbox{
-    width: 400px;
-    height: 300px;
-    background-color: aqua;
+#page2{
+    height: 100vh;
+    border-radius: 50px ;
+    /* background: radial-gradient(circle at top , #000000 40%, chartreuse 130%);
+     */
+     display: flex;
 }
+#page3{
+     height: 100vh;
+     /*background: radial-gradient(circle at center, #1a4116 0%, #000000 100%); */
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page4{
+    height: 100vh;
+    
+}
+#page5{
+    height: 100vh;
+    
+}
+.intro{
+    height: 85%;
+    display: flex;
+   
+}
+
 .image{
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10%;
+    
 }
+.imageborder {
+  position: relative;
+  width: 33vw;
+  height: 30vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Rotating gradient ring */
+.border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#009e57 0%, #009e57 100%);
+  animation: rotateBorder 4s linear infinite;
+  z-index: 0;
+  padding: 6px;
+  filter: blur(1.5px);
+}
+
+/* The actual image */
 .photo{
-    border: 10px solid #ffffff;
-    border-radius: 50%;
-    height: 30vw;
-    animation: lightning 1s ease-in-out 0ms infinite alternate-reverse ;
+  position: relative;
+  z-index: 1;
+  width: 32vw;
+  height: 32vw;
+  border-radius: 50%;
+  border: 5px solid #001d0f;
+  object-fit: cover;
 }
-@keyframes lightning {
-    0%{box-shadow: 0 0 50px pink}
-    100%{box-shadow: 0 0 50px yellow}
+
+/* Keyframes */
+@keyframes rotateBorder {
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.info{
-    margin-left: 50px;
+
+.biodata{
+    width: 50%;
+    height: 100%;
+    
+    padding-left: 50px;
     display: flex;
     flex-direction: column ;
+    justify-content: center;
     
 }
 .details{
     margin-top: 50px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 .hi{
     margin-left: 7px;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 4vw;
+    font-weight: 400;
     color: #ffffff;
+    
+  font-family: "Pinyon Script", cursive;
+  font-style: normal;
+  
+
 }
 .name{
     font-family: sans-serif;
@@ -106,10 +210,10 @@ body{
     color: yellowgreen;
 }
 .about{
-    font-size:1.1vw;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .box_copy{
@@ -138,27 +242,18 @@ body{
    
 }
 
-.skills2{
 
-    align-self: center;
-    height: 38vw;
-    align-items: center;
-    
-    width: 90vw;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: pin;
-}
 
 .cv{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    gap: 2.1vw;
 }
 .cvbtn{
-    width: 58%;
-    height: 4vw;
+    width: 22vw;
+    height: 3.2vw;
     color: #ffffff;
+    font-size: 1.5vw;
     border-radius: 50px;
     border: 2.5px solid chartreuse;
     background-color: chartreuse;
@@ -172,13 +267,14 @@ body{
     
 }
 .worksbtn{
-    width: 30%;
-    height: 4vw;
+    width: 12vw;
+    height: 3.2vw;
+    font-size: 1.5vw;
     border-radius: 50px;
     color: #ffffff;
     border: 2.5px solid yellowgreen;
     
-    margin-right: 30px;
+    
     transition-duration: 0.3s;
     transition-property: all;
     transition-delay: 0ms;
@@ -191,15 +287,16 @@ body{
     
 }
 .skills{
-    width: 45vw;
-    height: 12vw;
+    width: 40vw;
+    height:10vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
+
     background-color: pin;
 }
 .contact{
-    margin-top: 2vw;
+    
     padding-top: 1vw;
     height: 5vw;
     width: 25vw;
@@ -222,7 +319,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: chartreuse;
+    text-align: center;
+    font-size: 2vw;
     
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+.ic:hover{
+    background-color: chartreuse;
+    color: #000000;
+    box-shadow: 0 0 10px chartreuse;
+    height: 2.2vw;
+    width: 2.2vw;
+    font-size: 2.2vw;
+    padding: 1.4vw;
+    font-weight: 900;
 }
 
 .contact span{
@@ -250,6 +364,17 @@ body{
     display: flex;
     flex-direction:column ;
 }
+.skills2{
+
+    align-self: center;
+    height: 38vw;
+    align-items: center;
+    
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 .box p{
     color: #ffffff;
     font-weight: 600;
@@ -266,20 +391,24 @@ body{
     font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.skl{
-    padding-top: 30px;
+.skilltitle{
+    
     
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 5vw;
     color: #ffffff;
-    text-align: center;
+    
 }
 
 .box{
-    height: 24vw;
+    height: 80%;
     width: 24vw;
-    background-color: rgba(255, 255, 255,0.2);
+    background: transparent;
+    background-color: rgba(176, 226, 127, 0.07);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 60px rgba(13, 51, 0, 0.2),
+                0 0 2px rgba(4, 17, 1, 0.2) inset;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -288,11 +417,15 @@ body{
     transition-delay: 0ms;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
+
+    
+  animation: float 3s ease-in-out infinite;
 }
 .box:hover{
-    height: 26vw;
-    width: 26vw;
-    box-shadow: 0 0px 40px rgba(16, 251, 0.4,1);
+    height: 90%;
+    width: 30%;
+    box-shadow: 0 0 30px rgba(60, 255, 83, 0.7),
+                  0 0 10px rgba(20, 255, 55, 0.3) inset;
     
     
 }
@@ -313,29 +446,38 @@ footer{
 }
 .myimg{
     width: 40%;
+    height: 100%;
     background-color: aqu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .aboutsection{
     width: 60%;
-    background-color: blueviole;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 .abouttitle{
-    height: 25%;
-    background-color: cadetblu;
+    height: 5vw; 
+    display: flex;
+    align-items: center;
     
     
 }
-.abouttitle h4{
+
+.abouttitle p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 3vw;
   font-weight: 600;
   color: white;
-  padding-top: 7vw;
-  
 }
 .aboutme{
-    height: 49%;
+    
+    
     background-color: darkgoldenro;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -345,6 +487,8 @@ footer{
     color: #ffffff;
     font-weight: 500;
     text-align: justify;
+   
+
 }
 .imgq{
     margin: 6vw;
@@ -360,15 +504,19 @@ footer{
     margin-bottom: 12vw;
     height: 40vw;
 }
-.abouttitle h4:hover{
+.abouttitle p:hover{
     
     color: greenyellow;
 }
 .more{
-    height: 5%;
+    height: 8vw;
+    
+    display: flex;
+    align-items: center;
 
 }
 .morebtn{
+    margin-top: 1.3vw;
     height: 3.5vw;
     width: 20vw;
     border-radius: 20px;
@@ -386,16 +534,711 @@ footer{
 
     text-align: center;
     font-family:     'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-size: 1.9vw;
 }
 .im{
     
     margin: 6vw;
     height: 34vw;
+    width: 70%;
     border-radius: 30px;
     background-color: rgb(255, 255, 255,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+.servicetitle{
+    height: 20%;
+    width: 100%;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.servicetitle h3{
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.services{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 2vw;
+}
+.servicebox{
+    
+    height: 30vw;
+    width: 26vw;
+}
+.serviceicon{
+    
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconborder{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: conic-gradient(#00ff00, #ffff00, #00ff00);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    animation: shimmer 1.5s infinite;
+    
+  background: linear-gradient(100deg, #01fa26 20%, #00735a 40%, #015532 60%);
+  background-size: 200% 100%;
+    }
+ @keyframes shimmer {
+    to{
+        background-position: -200% 0;
+    }}
+.serviceimage{
+    height: 10vw;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    
+}
+.servicedetails{
+    
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+   gap: 1vw;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.servicedetails h4{
+    font-size: 3vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: white;
+    animation: fadeup 0.6s ease forwards;
+    transition: all 0.2s ease-in-out;
+}
+.servicedetails p{
+    text-align: center;
+    font-size: 1vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #ffffffc0;
+}
+
+
+
+.icon{
+    height: 14vw;
+    width: 14vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(0, 32, 23)
+    
+
+}
+
+.servicebox:hover{
+    .iconborder{
+        box-shadow: 0 0 10px rgba(60, 255, 83, 0.7),
+                  0 0 10px rgba(20, 255, 55, 0.3) inset;
+        
+    height: 16vw;
+    width: 16vw;
+    
+    background: conic-gradient(#15ff00, #ffff00, #00ff73);
+    .serviceimage{
+        height: 11vw;
+
+    }
+    
+    
+    
+}
+.servicedetails h4{
+    font-size: 3.5vw;
+    color: chartreuse;
+}
+}
+
+.contacttitle{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacttitle h3{
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+
+}
+.contacttitle h3 span{
+    color: chartreuse;
+}
+.contactarea{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contactdetails{
+    width: 50%;
+    height: 100%;
+}
+.contactform{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contactform form{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contactform form input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 10%;
+    height: 7vh;
+    width: 60%;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 1.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 4px rgba(79, 109, 68, 0.2),
+                0 0 2px rgba(33, 128, 11, 0.2) inset;
+    outline: none;
+}
+    
+.contactform form input::placeholder{
+    font-size: 1.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(212, 251, 197, 0.719);
+}
+
+.inputtextarea{   
+    height: 20%;
+    width: 60%;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10%;
+    padding-top: 10px;
+    font-size: 1.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:transparent;
+    color: whitesmoke;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 4px rgba(79, 109, 68, 0.2),
+                0 0 2px rgba(33, 128, 11, 0.2) inset;
+    outline: none;
+}
+.inputtextarea::placeholder{
+    
+    font-size: 1.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    color: rgba(212, 251, 197, 0.719);
+
+}
+
+.sendbtn{
+    height: 5vh;
+    width: 15vw;
+    border-radius: 50px;
+    border: none;
+    background:transparent;
+    font-size: 1.2vw;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    box-shadow: 0 0 4px chartreuse;
+    cursor: pointer;
+}
+
+.contactdetails{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4%;
+    padding-right: 5%;
+}
+.contactdetails h4{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3vw;
+    
+}
+.contactdetails p{
+    margin-top: 1vw;
+    color: rgba(255, 255, 255,0.8);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.9vw;
+    font-weight: 600;
+}
+.contactdetails h3{
+    margin-left: 2vw;
+    margin-top: 3vw;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5vw;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+
+@keyframes fadeup{
+    0%{ opacity: 0; transform: translateY(20px);}
+    100%{ opacity: 1; transform: translateY(0);}
+}
+
+@media only screen and (max-width: 455px){
+    header{
+        height: 20vh;
+        flex-direction: column;
+
+    }
+    .logo{
+        width: 90%;
+        height: 40%;
+        
+        margin: 0;
+        padding-left:10%;
+    }
+    .logo p{
+        font-size: 160%;
+    }
+    .navbar{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .navbar nav a{
+        font-size: 2.8vw;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: #ffffff21;
+        
+    }
+    .intro{
+        flex-direction: column-reverse;
+        height: 80vh;
+    
+    }
+    .image{
+        width: 100%;
+        height: 30%;
+        margin: 0;
+        
+    }
+    .photo{
+        height: 50vw;
+        width: 50vw;
+    }
+    .imageborder{
+        width: 52vw;
+        height: 47vw;
+    }
+    .biodata{
+        width: 90%;
+        height: 70%;
+        
+        justify-content:unset;
+        padding-left: 8%;
+    }
+    .details{
+        margin: 0;
+
+    }
+    .hi{
+        font-size: 7vw;
+    }
+    .name{
+        font-size: 14vw;
+    }
+    .job{
+        font-size: 3.5vw;
+    }
+    .bio{
+        width: 80vw;
+    }
+    .skills{
+        
+        height: 55vw;
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cv{
+        background-color: aquamarin;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cvbtn{
+        width: 80%;
+        height: 33%;
+        font-size: 3vw;
+        background-color: rgba(128, 255, 0, 0.2);
+        border: 0;
+        box-shadow: 0 0 5px rgba(128, 255, 0, 0.8);;
+    }
+    .worksbtn{
+        height: 30%;
+        width: 40%;
+        font-size: 3vw;
+        background-color: rgba(234, 255, 0, 0.177);
+        border: 0;
+        box-shadow: 0 0 5px rgba(212, 255, 0, 0.8);;
+    
+    }
+    .contact{
+        height: 4vh;
+        width: 50vw;
+       
+    }
+    .ic{
+        height: 4vw;
+        width: 4vw;
+        font-size: 4vw;
+        padding: 1.2vw;
+        text-align: center;
+    }
+    .ic:hover{
+        height: 4.5vw;
+        width: 4.5vw;
+        font-size: 4.5vw;
+        padding: 1.6vw;
+    }
+    .contact span{
+        font-size: 4vw;
+    }
+    .contact span:hover{
+        color: chartreuse;
+        font-size: 4.5vw;
+        font-weight: 900;
+    }
+    #page2{
+        flex-direction: column-reverse;
+    }
+    .myimg{
+        width: 100%;
+        height: 50%;
+    }
+    .imgq{
+        
+        margin: 0;
+       height: 100%;
+       border-radius: 30px;
+    }
+    .imgq:hover{
+    margin: 0;
+    height: 130%;}
+
+    .im{
+        
+    height: 80%;
+    width: 70%;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    }
+    .aboutsection{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .abouttitle p {
+        font-size: 12vw;
+    }
+    .aboutme{
+    
+    
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aboutme p{
+    font-size: 2.8vw;
+    padding-right: 9vw;
+    padding-left: 9vw;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.morebtn{
+    height: 10vw;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: chartreuse;
+    box-shadow: 0 0 10px rgb(117, 221, 13);
+    border: 0;
+    
+}
+.morebtn h4{
+    font-size: 4vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    color: #0a0a0a;
+}
+.skilltitle{
+    width: 100%;
+    height: 20%;
+    font-size: 13vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills2{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+.box{
+    width: 73%;
+    height: 23%;
+}
+.box:hover{
+    width: 73%;
+    height: 40%;
+    h4{
+        font-size: 5vw;
+        visibility: visible;
+        
+
+    }
+}
+.box h4{
+    font-size: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.I{
+    height: 15vw;
+}
+.box p{
+    font-size: 8vw;
+}
+.servicetitle{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;}
+.servicetitle h3{
+    font-size: 10vw;
+    margin-bottom: 2vw;
+}
+.services{
+    flex-direction: column;
+    height: 85%;
+    width: 100%;
+    gap: 5vw;
+}
+.servicebox{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.serviceicon{
+    height: 70%;
+    width: 100%;
+}
+.servicedetails{
+    height: 30%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.iconborder{
+    height: 30vw;
+    width: 30vw;
+
+
+
+
+
+
+}
+.icon{
+    height: 28vw;
+    width: 28vw;
+}
+.serviceimage{
+    height: 20vw;
+}
+.servicedetails h4{
+    font-size: 6vw;
+}
+.servicedetails p{
+    font-size: 3vw;
+    visibility: hidden;
+
+}
+.servicebox:hover{
+    .iconborder{
+        box-shadow: 0 0 10px rgba(60, 255, 83, 0.7),
+                  0 0 10px rgba(20, 255, 55, 0.3) inset;
+        
+    height: 31vw;
+    width: 31vw;
+    
+    background: conic-gradient(#15ff00, #ffff00, #00ff73);
+    .serviceimage{
+        height: 21vw;
+
+    }
+    
+    
+    
+}
+.servicedetails h4{
+    font-size: 7vw;
+    color: chartreuse;
+
+}
+.servicedetails p{
+    font-size: 3vw;
+    visibility: visible;
+
+}}
+
+#page5{
+    flex-direction: column;
+}
+.contactarea{
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+.contacttitle{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.contacttitle h3{
+    font-size: 10vw;
+}
+.contactdetails{
+    width: 90%;
+    height: 40%;
+    margin-bottom: 5vw;
+    gap: 1.5vw;
+
+}
+.contactdetails h4{
+    font-size: 5vw; 
+    text-align: center;
+margin-bottom: 3vw;
+
+}
+.contactdetails p{
+    
+    font-size: 2.8vw;
+    padding-right: 9vw;
+    padding-left: 9vw;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: justify;
+}
+.contactdetails h3{
+    font-size: 4vw;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    padding-left: 9vw;
+}   
+.contactdetails .contact{
+     margin-left: 5vw;
+}
+.contactform{
+    width: 90%;
+    height: 50%;
+}
+.contactform form{
+    height: 100%;
+    width: 100%;
+}
+.contactform form input{
+    height: 4.2vh;
+    width: 70%;
+    font-size: 3vw;
+}
+.inputtextarea{   
+    height: 25%;
+    width: 70%;
+    font-size: 3vw;
+}
+.sendbtn{
+    height: 5vh;
+    width: 30vw;
+    font-size: 2.4vw;
+}
+.contactform form input::placeholder{
+    font-size: 3vw;
+}
+.contactform form textarea::placeholder{
+    font-size: 3vw;
+}
 }
